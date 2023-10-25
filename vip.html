@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site - Seja Vip</title>
+    <title>Meu Site</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,10 +11,40 @@
             padding: 0;
             background-color: #f0f0f0;
         }
+        #menu {
+            text-align: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        #menu a {
+            text-decoration: none;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #menu a:hover {
+            background-color: #555;
+        }
+        #content {
+            text-align: center;
+            margin: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>Seja Vip - Benefícios e Informações</h1>
-    <!-- Conteúdo da Página Seja Vip -->
+    <div id="menu">
+        <a href="index.html">Início</a>
+        <a href="regras.html">Regras</a>
+        <a href="vip.html">Seja Vip</a>
+        <a href="ajuda.html">Ajuda</a>
+    </div>
+    <div id="content">
+        <h1>Seja Vip - Benefícios e Informações</h1>
+        <p>Página dos Cargos</p>
+    </div>
 </body>
 </html>
