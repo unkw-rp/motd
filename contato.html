@@ -49,13 +49,32 @@
         }
         .text-2 {
             color: #c70c0c;
-            font-size: 25px;
+            font-size: 15px;
+        }
+        .text-esp {
+            color: #B5AF06;
+            font-size: 10px;
+        }
+        .grid-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .grid-item {
+            text-align: center;
+            flex-basis: calc(33.33% - 20px); /* 33.33% para 3 colunas com espaço entre */
+        }
+        .icon {
+            width: 100px;
+            height: 100px;
         }
     </style>
 </head>
 <body>
     <div id="content">
-        <img src="https://i.imgur.com/GnXglom.png" alt="MOTD" width="550" height="70">
+        <img src="https://i.imgur.com/y2NmYNQ.png" alt="MOTD" width="550" height="70">
     </div>
     <div id="menu">
         <a href="index.html">Início</a>
@@ -66,11 +85,39 @@
     </div>
     <div id="content">
         <p class="text-navegue">↑↑↑ NAVEGUE NO MENU ACIMA PARA TIRAR SUAS DÚVIDAS ↑↑↑</p>
-        <p class="text-1">CONTATO AQUI</p>
+        <p class="text-2">» USE O SCROLL PARA ROLAR A PÁGINA «</p>
         <br>
-        <p class="text-1">Esperamos que você tenha uma excelente experiência de jogo!</p>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img class="icon" src="https://i.pinimg.com/564x/83/3b/72/833b720d4ac2df15d2dd96c6d1839bcf.jpg">
+                <p>Título 1</p>
+                <p class="url" onclick="copyToClipboard('URL 1')">URL 1</p>
+            </div>
+                        <div class="grid-item">
+                <img class="icon" src="https://i.pinimg.com/564x/83/3b/72/833b720d4ac2df15d2dd96c6d1839bcf.jpg">
+                <p>Título 1</p>
+                <p class="url" onclick="copyToClipboard('URL 1')">URL 1</p>
+            </div>
+                        <div class="grid-item">
+                <img class="icon" src="https://i.pinimg.com/564x/83/3b/72/833b720d4ac2df15d2dd96c6d1839bcf.jpg">
+                <p>Título 1</p>
+                <p class="url" onclick="copyToClipboard('URL 1')">URL 1</p>
+            </div>
+            <!-- Repita este bloco para adicionar mais ícones -->
+        </div>
         <hr class="divider">
         <p class="text-navegue">WWW.UNKW.COM.BR - UNKW SERVIDORES 2024 - TODOS OS DIREITOS RESERVADOS</p>
     </div>
+
+    <script>
+        function copyToClipboard(text) {
+            const tempInput = document.createElement("input");
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+        }
+    </script>
 </body>
 </html>
