@@ -16,7 +16,8 @@
             background-color: #333;
             padding: 10px;
         }
-        #menu button {
+        #menu a {
+            text-decoration: none;
             background-color: #333;
             color: #fff;
             border: none;
@@ -25,57 +26,24 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
-        #menu button:hover {
+        #menu a:hover {
             background-color: #555;
         }
         #content {
             text-align: center;
             margin: 20px;
         }
-        .hidden {
-            display: none;
-        }
     </style>
 </head>
 <body>
     <div id="menu">
-        <button onclick="showPage(1)">Tela Inicial</button>
-        <button onclick="showPage(2)">Servidores</button>
-        <button onclick="showPage(3)">Comprar VIP</button>
-        <button onclick="showPage(4)">Regras</button>
+        <a href="index.html">Início</a>
+        <a href="regras.html">Regras</a>
+        <a href="vip.html">Seja Vip</a>
+        <a href="ajuda.html">Ajuda</a>
     </div>
     <div id="content">
-        <div id="page1">
-            <h1>Seja Bem-Vindo!</h1>
-            <p>Esta é a página inicial do meu site. Adicione aqui sua mensagem de boas-vindas e conteúdo inicial.</p>
-        </div>
-        <div id="page2" class="hidden">
-            <h1>Página 2</h1>
-            <!-- Conteúdo da Página 2 -->
-        </div>
-        <div id="page3" class="hidden">
-            <h1>Página 3</h1>
-            <!-- Conteúdo da Página 3 -->
-        </div>
-        <div id="page4" class="hidden">
-            <h1>Regras</h1>
-            <ol>
-                <li>Não é permitido spam ou flood no chat.</li>
-                <li>Seja respeitoso com outros jogadores e evite comportamentos tóxicos.</li>
-                <li>Respeite as regras específicas do servidor e do jogo em que está jogando.</li>
-                <li>Não compartilhe informações pessoais ou sensíveis no chat.</li>
-                <li>Qualquer forma de trapaça ou uso de programas ilegais resultará em banimento permanente.</li>
-            </ol>
-        </div>
+        <!-- Conteúdo da Página Inicial -->
     </div>
-
-    <script>
-        function showPage(pageNumber) {
-            for (let i = 1; i <= 4; i++) {
-                document.getElementById(`page${i}`).classList.add('hidden');
-            }
-            document.getElementById(`page${pageNumber}`).classList.remove('hidden');
-        }
-    </script>
 </body>
 </html>
