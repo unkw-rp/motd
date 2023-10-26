@@ -58,7 +58,7 @@
             font-size: 15px;
         }
         .text-esp {
-            color: #B5AF06;
+            color: #e6de0e;
             font-size: 10px;
         }
         .text-ctt1 {
@@ -81,6 +81,7 @@
     <div id="content">
         <img src="https://i.imgur.com/y2NmYNQ.png" alt="MOTD" width="550" height="70">
     </div>
+
     <div id="menu">
         <a href="index.html">Início</a>
         <a href="regras.html">Regras</a>
@@ -89,10 +90,9 @@
         <a href="contato.html">Contato</a>
     </div>
     
-    
     <div id="content">
         <p class="text-navegue">↑↑↑ NAVEGUE NO MENU ACIMA PARA TIRAR SUAS DÚVIDAS ↑↑↑</p>
-        <br>
+        <p class="text-esp">» CLIQUE EM ALGUMA OPÇÃO PARA COPIAR O LINK AUTOMATICAMENTE «</p>
 	</div>
     
     <div class="section text-center">
@@ -100,7 +100,7 @@
             <div class="row text-center">
                 <div class="col-xs-6 text-center col-md-4">
                     <a><i class="fa fa-4x fa-brands fa-whatsapp" style="color: #a00000;"></i></a>
-                    <p><a href="whatsapp.unkw.com.br"class="text-ctt1 copy-link">WhatsApp<br></a><a href="whatsapp.unkw.com.br"class="text-ctt2 copy-link">whatsapp.unkw.com.br<br></a></p>
+                    <p><a href="whatsapp.unkw.com.br"class="text-ctt1 copy-link">Grupo do WhatsApp<br></a><a href="whatsapp.unkw.com.br"class="text-ctt2 copy-link">whatsapp.unkw.com.br<br></a></p>
                 </div>
                 <div class="col-xs-6 text-center col-md-4">
                     <a><i class="fa fa-4x fa-brands fa-square-steam" style="color: #a00000;"></i></a>
@@ -108,17 +108,30 @@
                 </div>
                 <div class="col-xs-6 text-center col-md-4">
                     <a><i class="fa fa-4x fa-brands fa-discord" style="color: #a00000;"></i></a>
-                    <p><a href="discord.unkw.com.br"class="text-ctt1 copy-link">Discord<br></a><a href="discord.unkw.com.br"class="text-ctt2 copy-link">discord.unkw.com.br<br></a></p>
+                    <p><a href="discord.unkw.com.br"class="text-ctt1 copy-link">Discord<br></a><a href="discord.unkw.com.br"class="text-ctt2 copy-link">discord.unkw.com.br</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section text-center">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xs-6 text-center col-md-4">
+                    <a><i class="fa fa-4x fa-brands fa-whatsapp" style="color: #a00000;"></i></a>
+                    <p><a href="whatsapp.unkw.com.br"class="text-ctt1 copy-link">WhatsApp do RP<br></a><a href="whatsapp.unkw.com.br"class="text-ctt2 copy-link">whatsapp.unkw.com.br<br></a></p>
                 </div>
             </div>
         </div>
     </div>
         
-        
-    <div>
-    	<hr class="divider">
+    <div id="content">
+        <p class="text-esp">↑↑↑ CLIQUE EM ALGUMA OPÇÃO PARA COPIAR O LINK AUTOMATICAMENTE ↑↑↑</p>
+	</div>
+
+    <footer style="border-top: 1px solid #fff; padding: 14px;">
     	<p class="text-navegue">WWW.UNKW.COM.BR - UNKW SERVIDORES 2024 - TODOS OS DIREITOS RESERVADOS</p>
-    </div>
+    </footer>
 
     <script>
         function copyToClipboard(text) {
@@ -131,26 +144,23 @@
         }
     </script>
 
-<script>
-    // Função para copiar o texto para a área de transferência
-    function copyToClipboard(text) {
-        var tempInput = document.createElement("input");
-        tempInput.value = text;
-        document.body.appendChild(tempInput);
-        tempInput.select();
-        document.execCommand("copy");
-        document.body.removeChild(tempInput);
-    }
-
-    // Adicione um evento de clique aos links com a classe "copy-link"
-    var copyLinks = document.querySelectorAll('.copy-link');
-    for (var i = 0; i < copyLinks.length; i++) {
-        copyLinks[i].addEventListener('click', function(event) {
-            event.preventDefault(); // Impedir a navegação para a URL
-            var url = this.getAttribute('href'); // Obter a URL do atributo href
-            copyToClipboard(url); // Chamar a função para copiar para a área de transferência
-        });
-    }
-</script>
+    <script>
+        function copyToClipboard(text) {
+            var tempInput = document.createElement("input");
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+        }
+        var copyLinks = document.querySelectorAll('.copy-link');
+        for (var i = 0; i < copyLinks.length; i++) {
+            copyLinks[i].addEventListener('click', function(event) {
+                event.preventDefault();
+                var url = this.getAttribute('href');
+                copyToClipboard(url);
+            });
+        }
+    </script>
 </body>
 </html>
