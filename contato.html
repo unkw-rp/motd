@@ -64,12 +64,12 @@
         .text-ctt1 {
             color: #d6d6d6;
             text-decoration: none; /* Remover sublinhado padrão dos links */
-            font-size: 12px;
+            font-size: 14px;
             transition: color 0.3s; /* Efeito de transição de cor suave */
         }
         .text-ctt2 {
             color: #a00000;
-            font-size: 10px;
+            font-size: 12px;
             transition: color 0.3s; /* Efeito de transição de cor suave */
         }
         .text-ctt1:hover, .text-ctt2:hover {
@@ -92,7 +92,7 @@
     
     <div id="content">
         <p class="text-navegue">↑↑↑ NAVEGUE NO MENU ACIMA PARA TIRAR SUAS DÚVIDAS ↑↑↑</p>
-        <p class="text-2">» USE O SCROLL PARA ROLAR A PÁGINA «</p>
+        <br>
 	</div>
     
     <div class="section text-center">
@@ -100,15 +100,15 @@
             <div class="row text-center">
                 <div class="col-xs-6 text-center col-md-4">
                     <a><i class="fa fa-4x fa-brands fa-whatsapp" style="color: #a00000;"></i></a>
-                    <p><a href="whatsapp.unkw.com.br"class="text-ctt1">WhatsApp<br></a><a href="whatsapp.unkw.com.br"class="text-ctt2">whatsapp.unkw.com.br<br></a></p>
+                    <p><a href="whatsapp.unkw.com.br"class="text-ctt1 copy-link">WhatsApp<br></a><a href="whatsapp.unkw.com.br"class="text-ctt2 copy-link">whatsapp.unkw.com.br<br></a></p>
                 </div>
                 <div class="col-xs-6 text-center col-md-4">
                     <a><i class="fa fa-4x fa-brands fa-square-steam" style="color: #a00000;"></i></a>
-                    <p><a href="steam.unkw.com.br"class="text-ctt1">Steam<br></a><a href="steam.unkw.com.br"class="text-ctt2">steam.unkw.com.br<br></a></p>
+                    <p><a href="steam.unkw.com.br"class="text-ctt1 copy-link">Steam<br></a><a href="steam.unkw.com.br"class="text-ctt2 copy-link">steam.unkw.com.br<br></a></p>
                 </div>
                 <div class="col-xs-6 text-center col-md-4">
                     <a><i class="fa fa-4x fa-brands fa-discord" style="color: #a00000;"></i></a>
-                    <p><a href="discord.unkw.com.br"class="text-ctt1">Discord<br></a><a href="discord.unkw.com.br"class="text-ctt2">discord.unkw.com.br<br></a></p>
+                    <p><a href="discord.unkw.com.br"class="text-ctt1 copy-link">Discord<br></a><a href="discord.unkw.com.br"class="text-ctt2 copy-link">discord.unkw.com.br<br></a></p>
                 </div>
             </div>
         </div>
@@ -130,5 +130,27 @@
             document.body.removeChild(tempInput);
         }
     </script>
+
+<script>
+    // Função para copiar o texto para a área de transferência
+    function copyToClipboard(text) {
+        var tempInput = document.createElement("input");
+        tempInput.value = text;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
+    }
+
+    // Adicione um evento de clique aos links com a classe "copy-link"
+    var copyLinks = document.querySelectorAll('.copy-link');
+    for (var i = 0; i < copyLinks.length; i++) {
+        copyLinks[i].addEventListener('click', function(event) {
+            event.preventDefault(); // Impedir a navegação para a URL
+            var url = this.getAttribute('href'); // Obter a URL do atributo href
+            copyToClipboard(url); // Chamar a função para copiar para a área de transferência
+        });
+    }
+</script>
 </body>
 </html>
