@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>MOTD UNKW | COPIA NÃO LIXO</title>
     <style>
         body {
@@ -40,6 +45,7 @@
             margin: 20px;
         }
         .text-navegue {
+        	text-align: center;
             color: #a7a7a7;
             font-size: 14px;
         }
@@ -55,23 +61,6 @@
             color: #B5AF06;
             font-size: 10px;
         }
-        .grid-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: nowrap;
-            gap: 20px;
-            flex-direction: row;
-        }
-        .grid-item {
-        	max-width: 33%
-            text-align: center;
-            flex-basis: calc(25.33% - 20px); /* 33.33% para 3 colunas com espaço entre */
-        }
-        .icon {
-            width: 80px;
-            height: 80px;
-        }
     </style>
 </head>
 <body>
@@ -85,29 +74,39 @@
         <a href="ajuda.html">Como Jogar</a>
         <a href="contato.html">Contato</a>
     </div>
+    
+    
     <div id="content">
         <p class="text-navegue">↑↑↑ NAVEGUE NO MENU ACIMA PARA TIRAR SUAS DÚVIDAS ↑↑↑</p>
         <p class="text-2">» USE O SCROLL PARA ROLAR A PÁGINA «</p>
         <br>
-        <div class="grid-container">
-            <div class="grid-item">
-                <img class="icon" src="https://i.pinimg.com/564x/83/3b/72/833b720d4ac2df15d2dd96c6d1839bcf.jpg">
-                <p>Título 1</p>
-                <p class="url" onclick="copyToClipboard('URL 1')">URL 1</p>
-            </div>
-            <div class="grid-item">
-                <img class="icon" src="https://i.pinimg.com/564x/83/3b/72/833b720d4ac2df15d2dd96c6d1839bcf.jpg">
-                <p>Título 1</p>
-                <p class="url" onclick="copyToClipboard('URL 1')">URL 1</p>
-            </div>
-            <div class="grid-item">
-                <img class="icon" src="https://i.pinimg.com/564x/83/3b/72/833b720d4ac2df15d2dd96c6d1839bcf.jpg">
-                <p>Título 1</p>
-                <p class="url" onclick="copyToClipboard('URL 1')">URL 1</p>
+	</div>
+    
+    <div id="content">
+        <div class="section text-center">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-xs-6 text-center col-md-4">
+                    <a><i class="fa fa-4x fa-fw fa-youtube-play"></i></a>
+                    <p><a href="https://www.youtube.com/channel/UC8jSPhLLlJyQzym-HnEKTVg">YouTube<br>Comunidad zonaZerO</a></p>
+                </div>
+                <div class="col-xs-6 text-center col-md-4">
+                    <a><i class="fa fa-4x fa-fw fa-youtube-play"></i></a>
+                    <p><a href="https://www.youtube.com/channel/UC8jSPhLLlJyQzym-HnEKTVg">YouTube<br>Comunidad zonaZerO</a></p>
+                </div>
+                <div class="col-xs-6 text-center col-md-4">
+                    <a><i class="fa fa-4x fa-fw fa-youtube-play"></i></a>
+                    <p><a href="https://www.youtube.com/channel/UC8jSPhLLlJyQzym-HnEKTVg">YouTube<br>Comunidad zonaZerO</a></p>
+                </div>
             </div>
         </div>
-        <hr class="divider">
-        <p class="text-navegue">WWW.UNKW.COM.BR - UNKW SERVIDORES 2024 - TODOS OS DIREITOS RESERVADOS</p>
+        </div>
+    </div>
+        
+        
+    <div>
+    	<hr class="divider">
+    	<p class="text-navegue">WWW.UNKW.COM.BR - UNKW SERVIDORES 2024 - TODOS OS DIREITOS RESERVADOS</p>
     </div>
 
     <script>
