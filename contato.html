@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/8bb519652f.js" crossorigin="anonymous"></script>
     <title>MOTD UNKW | COPIA NÃO LIXO</title>
     <style>
         body {
@@ -61,6 +61,20 @@
             color: #B5AF06;
             font-size: 10px;
         }
+        .text-ctt1 {
+            color: #d6d6d6;
+            text-decoration: none; /* Remover sublinhado padrão dos links */
+            font-size: 12px;
+            transition: color 0.3s; /* Efeito de transição de cor suave */
+        }
+        .text-ctt2 {
+            color: #a00000;
+            font-size: 10px;
+            transition: color 0.3s; /* Efeito de transição de cor suave */
+        }
+        .text-ctt1:hover, .text-ctt2:hover {
+            color: red; /* Cor quando o mouse passa por cima dos links */
+        }
     </style>
 </head>
 <body>
@@ -79,27 +93,24 @@
     <div id="content">
         <p class="text-navegue">↑↑↑ NAVEGUE NO MENU ACIMA PARA TIRAR SUAS DÚVIDAS ↑↑↑</p>
         <p class="text-2">» USE O SCROLL PARA ROLAR A PÁGINA «</p>
-        <br>
 	</div>
     
-    <div id="content">
-        <div class="section text-center">
+    <div class="section text-center">
         <div class="container">
             <div class="row text-center">
                 <div class="col-xs-6 text-center col-md-4">
-                    <a><i class="fa fa-4x fa-fw fa-youtube-play"></i></a>
-                    <p><a href="https://www.youtube.com/channel/UC8jSPhLLlJyQzym-HnEKTVg">YouTube<br>Comunidad zonaZerO</a></p>
+                    <a><i class="fa fa-4x fa-brands fa-whatsapp" style="color: #a00000;"></i></a>
+                    <p><a href="whatsapp.unkw.com.br"class="text-ctt1">WhatsApp<br></a><a href="whatsapp.unkw.com.br"class="text-ctt2">whatsapp.unkw.com.br<br></a></p>
                 </div>
                 <div class="col-xs-6 text-center col-md-4">
-                    <a><i class="fa fa-4x fa-fw fa-youtube-play"></i></a>
-                    <p><a href="https://www.youtube.com/channel/UC8jSPhLLlJyQzym-HnEKTVg">YouTube<br>Comunidad zonaZerO</a></p>
+                    <a><i class="fa fa-4x fa-brands fa-square-steam" style="color: #a00000;"></i></a>
+                    <p><a href="steam.unkw.com.br"class="text-ctt1">Steam<br></a><a href="steam.unkw.com.br"class="text-ctt2">steam.unkw.com.br<br></a></p>
                 </div>
                 <div class="col-xs-6 text-center col-md-4">
-                    <a><i class="fa fa-4x fa-fw fa-youtube-play"></i></a>
-                    <p><a href="https://www.youtube.com/channel/UC8jSPhLLlJyQzym-HnEKTVg">YouTube<br>Comunidad zonaZerO</a></p>
+                    <a><i class="fa fa-4x fa-brands fa-discord" style="color: #a00000;"></i></a>
+                    <p><a href="discord.unkw.com.br"class="text-ctt1">Discord<br></a><a href="discord.unkw.com.br"class="text-ctt2">discord.unkw.com.br<br></a></p>
                 </div>
             </div>
-        </div>
         </div>
     </div>
         
