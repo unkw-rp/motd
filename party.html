@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Plugin Zombie Party - Telegraph</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <link href="https://telegra.ph/css/quill.core.min.css" rel="stylesheet">
+        <link href="https://telegra.ph/css/core.min.css?44" rel="stylesheet">
+    </head>
+    <body>
+        <div class="tl_page_wrap">
+            <div class="tl_page">
+                <main class="tl_article">
+                    <header class="tl_article_header">
+                        <h1 dir="auto">Plugin Zombie Party</h1>
+                        <address dir="auto">
+                            <a rel="author" href="https://ugc-gaming.net/" target="_blank">UGC-Gaming.NET</a>
+                            <!--
+           -->
+                            <time datetime="2023-01-01T05:12:44+0000">1 de Janeiro de 2023</time>
+                        </address>
+                    </header>
+                    <article id="_tl_editor" class="tl_article_content">
+                        <h4 id="Explicação-de-como-o-plugin-funciona,-recursos-e-detalhes:">Explicação de como o plugin funciona, recursos e detalhes:</h4>
+                        <p>A ideia do plugin vem de um antigo servidor de Counter-Strike com zumbis.</p>
+                        <p>A ideia do Plugin Party é permitir que os jogadores criem grupos/equipes e coletem munição juntos: os ganhos dos jogadores serão distribuídos entre os membros do grupo. Se algum membro desperdiçar munição, você não a desperdiçará também: apenas contam os ganhos.</p>
+                        <p>
+                            Você pode acessar o menu de grupo dizendo <em>/grupo </em>
+                            ou pressionando <em>"M" - "6"</em>
+                        </p>
+                        <figure>
+                            <img src="https://telegra.ph/file/23ab4050625e4db60c94e.png">
+                            <figcaption>Como o menu do /grupo parece inicialmente</figcaption>
+                        </figure>
+                        <ul>
+                            <li>
+                                <strong>
+                                    <em>Menu de Líder: </em>
+                                </strong>
+                                <em>permite que você acesse o menu de "líder". Se você não estiver em um grupo, permite que você convide jogadores. Se você já estiver em um grupo, só poderá acessar o menu se for o líder do seu time: você pode convidar pessoas se o grupo não estiver cheio e expulsar jogadores dele. Em vez do menu para convidar pessoas para o seu grupo, você pode usar zp_invite_user <apelido> Em vez do menu para expulsar pessoas do seu grupo, você pode usar zp_remove_user <apelido> [1.1] Você pode deixar o cargo de líder e escolher outro membro do grupo para assumi-lo. [1.1] Você pode aceitar/recusar pedidos de pessoas para entrar no seu grupo.</em>
+                            </li>
+                            <li>
+                                <strong>
+                                    <em>Convites(x): </em>
+                                </strong>
+                                <em>se os jogadores enviarem um pedido para você entrar no grupo deles ou criar um, você o receberá aqui. Você só pode aceitar os convites se não estiver em outro grupo ou recusá-los. Para cada convite que você receber, você verá quem o convidou e, em vermelho, quantas pessoas estão atualmente em sua equipe.</em>
+                            </li>
+                        </ul>
+                        <figure>
+                            <img src="https://telegra.ph/file/71dfcacbaf8d398175b2e.png">
+                            <figcaption>[2] - há 2 jogadores nesse grupo. [0] - ele quer criar um grupo com você.</figcaption>
+                        </figure>
+                        <p>
+                            <br>
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>
+                                    <em>Deixar o Grupo: </em>
+                                </strong>
+                                <em>se você estiver em um grupo e quiser sair dele.</em>
+                            </li>
+                            <li>
+                                <strong>
+                                    <em>Atualização Automática: </em>
+                                </strong>
+                                <em>se você estiver em um grupo e quiser ser informado sobre a munição que você e seus companheiros estão ganhando, isso é permitido. Se estiver ativo e o menu do /grupo estiver aberto, ele atualizará sua munição no menu a cada poucos segundos e sempre que você ganhar munição atirando nos zumbis. </em>
+                                <strong>
+                                    <em>Isso pode substituir menus como /idioma, /armas, /entrar time, etc. [NÃO MAIS NO MENU /GRUPO DESDE V1.1] Você pode ativar/desativar a Atualização Automática dizendo </em>
+                                    /grupoatualizar<em></em>
+                                </strong>
+                            </li>
+                            <li>
+                                <strong>
+                                    <em>[1.1] Pedido para Entrar no Grupo: </em>
+                                </strong>
+                                <em>você pode solicitar entrar em um grupo já ativo. O líder do grupo receberá sua solicitação e decidirá se a aceita ou não.</em>
+                            </li>
+                        </ul>
+                        <h4 id="[v1.1]Chat do Grupo">[v1.1] Chat do Grupo</h4>
+                        <p>Se você estiver em um grupo e quiser enviar mensagens apenas para seus amigos do grupo, escreva um '#' seguido de sua mensagem e somente eles a receberão.</p>
+                        <blockquote>diga #<mensagem></blockquote>
+                        <p>
+                            Você também pode fazer isso usando o comando <em>amx_pchat</em>
+                            no console:
+                        </p>
+                        <blockquote>amx_pchat <mensagem></blockquote>
+                        <p>Você também pode vincular uma tecla para isso:</p>
+                        <blockquote>bind <tecla> "modomensagem amx_pchat"</blockquote>
+                        <p>
+                            <br>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p>
+                            <strong>Por padrão, os zumbis não receberão a munição ganha por seu grupo.</strong>
+                        </p>
+                        <p>(v1.0b: por padrão, os espectadores não receberão a munição ganha por seu grupo)</p>
+                        <figure>
+                            <img src="https://telegra.ph/file/9c7307de27ce4fb73083d.png">
+                            <figcaption>Como o menu parece para um zumbi</figcaption>
+                        </figure>
+                        <p>
+                            <strong>Por padrão, a munição ganha por VIPs que é exibida e dada a outros jogadores é a metade de seus ganhos totais.</strong> Isso torna os grupos entre VIPs ou jogadores normais <strong>iguais</strong>.
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p>A munição ganha por amigos é transferida diretamente para você também. </p>
+                        <p>Quando o líder sai por qualquer motivo, o segundo jogador se torna líder. </p>
+                        <p>Um grupo deve ter pelo menos 2 jogadores. Se houver apenas 2 jogadores e 1 for expulso ou sair, o grupo será fechado. </p>
+                        <p>
+                            <br>
+                        </p>
+                        <p>
+                            [1.1] Um motd com todos os comandos disponíveis está disponível no jogo dizendo <em>/comandosgrupo</em>
+                        </p>
+                        <figure>
+                            <img src="https://telegra.ph/file/f73218d0a2dd114443146.png">
+                            <figcaption>/comandosgrupo(s)</figcaption>
+                        </figure>
+                        <p>
+                            <br>
+                        </p>
+                        <p>
+                            Um motd com todas as informações estará disponível diretamente no jogo dizendo <em>/informacoesgrupo</em>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                        <h4 id="PLUGIN-BÔNUS">PLUGIN BÔNUS</h4>
+                        <figure>
+                            <img src="https://telegra.ph/file/cc739bc81232f10c3e9d1.png">
+                            <figcaption>/mostrarap <apelido>, /munição <apelido>, /mostrarmunição <apelido></figcaption>
+                        </figure>
+                        <p>
+                            <br>
+                        </p>
+                        <p>
+                            <br>
+                        </p>
+                    </article>
+                    <div id="_tl_link_tooltip" class="tl_link_tooltip"></div>
+                </main>
+            </div>
+        </div>
+        <div id="_tl_alerts" class="tl_alerts"></div>
+    </body>
+</html>
