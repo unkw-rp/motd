@@ -75,6 +75,20 @@
         .text-ctt1:hover, .text-ctt2:hover {
             color: red; /* Cor quando o mouse passa por cima dos links */
         }
+        .container{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .box{
+            width: 200px;
+        }
+        .discordsvg{
+            width: 86px;
+        }
+        .whatsappsvg{
+            width: 60px;
+        }
     </style>
 </head>
 <body>
@@ -95,25 +109,15 @@
         <p class="text-esp">» CLIQUE EM ALGUMA OPÇÃO PARA COPIAR O LINK AUTOMATICAMENTE «</p>
 	</div>
     
-    <div class="section text-center">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-xs-6 text-center col-md-4">
-                    <a><i class="fa fa-4x fa-brands fa-whatsapp" style="color: #a00000;"></i></a>
-		    <a href="./svg/discord-brands.svg"></a>
-                    <p><a href="https://chat.whatsapp.com/JwAyGshZobq9iyNy1FAmzs"class="text-ctt1 copy-link">Grupo do WhatsApp<br></a><a href="connect.unkw.com.br/whatsapp"class="text-ctt2 copy-link">whatsapp.unkw.com.br<br></a></p>
-                </div>
-                <div class="col-xs-6 text-center col-md-4">
-                    <a><i class="fa fa-4x fa-brands fa-square-steam" style="color: #a00000;"></i></a>
-                    <p><a href="https://steamcommunity.com/id/rp2kcs/"class="text-ctt1 copy-link">Steam<br></a><a href="https://steamcommunity.com/id/rp2kcs/"class="text-ctt2 copy-link">steam.unkw.com.br<br></a></p>
-                </div>
-                <div class="col-xs-6 text-center col-md-4">
-                    <a><i class="fa fa-4x fa-brands fa-discord" style="color: #a00000;"></i></a>
-                    <p><a href="https://discord.gg/twQ9rZRM"class="text-ctt1 copy-link">Discord<br></a><a href="connect.unkw.com.br/discord"class="text-ctt2 copy-link">discord.unkw.com.br</a></p>
-		    <br>
-                </div>
+    <div class="container">
+            <div class="box">
+                <a href=""><img src="./svg/whatsapp-brands.svg" class="whatsappsvg"></a>
+                <p><a href="https://chat.whatsapp.com/JwAyGshZobq9iyNy1FAmzs"class="text-ctt1 copy-link">Grupo do WhatsApp<br></a><a href="connect.unkw.com.br/whatsapp"class="text-ctt2 copy-link">whatsapp.unkw.com.br<br></a></p>
             </div>
-        </div>
+            <div class="box">
+                <a href=""><img src="./svg/discord-brands.svg" class="discordsvg"></a>
+                <p><a href="https://discord.gg/twQ9rZRM"class="text-ctt1 copy-link">Discord<br></a><a href="connect.unkw.com.br/discord"class="text-ctt2 copy-link">discord.unkw.com.br</a></p>
+            </div>
     </div>
 
     <footer style="border-top: 1px solid #fff; padding: 14px;">
