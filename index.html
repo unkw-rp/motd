@@ -18,21 +18,25 @@
         }
         #menu {
             text-align: center;
-            background-color: #333;
-            padding: 10px;
+            background-color: rgb(32, 32, 32);
+            padding: 2rem;
         }
         #menu a {
             text-decoration: none;
             background-color: #333;
             color: #fff;
             border: none;
-            padding: 10px 20px;
+            border-radius: 0.5rem;
+            padding: 1rem 2rem;
             margin: 5px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: all 0.5s;
+            font-size: 1.1rem;
+            font-weight: 600;
         }
         #menu a:hover {
             background-color: #701a1a;
+            transition: all 0.5s;
         }
         #menu a[href="index.html"] {
             background-color: #700;
@@ -47,15 +51,28 @@
         .text-navegue {
         	text-align: center;
             color: #a7a7a7;
-            font-size: 12px;
+            font-size: 1rem;
+            padding: 1rem 0 0 0;
+        }
+        .text-h1 {
+            color: #eee;
+            font-size: 9rem;
+            font-weight: 900;
+            /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+            font-family: fantasy;
+            text-transform: uppercase;
+            margin: 2rem 0 0 0;
+        }
+        .text-h2 {
+            color: #D30000;
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
         }
         .text-1 {
             color: #a7a7a7;
-            font-size: 15px;
-        }
-        .text-2 {
-            color: #c70c0c;
-            font-size: 15px;
+            font-size: 1rem;
+            margin: 1rem 0 0 0;
         }
         .text-esp {
             color: #e6de0e;
@@ -75,6 +92,10 @@
         .text-ctt1:hover, .text-ctt2:hover {
             color: red; /* Cor quando o mouse passa por cima dos links */
         }
+        footer {
+            font-weight: 900;
+            margin: 3rem 0 0 0;
+        }
     </style>
 </head>
 <body>
@@ -89,8 +110,9 @@
         <a href="contato.html">Contato</a>
     </div>
     <div id="content">
-        <p class="text-navegue">↑↑↑ NAVEGUE NO MENU ACIMA PARA TIRAR SUAS DÚVIDAS ↑↑↑</p>
-        <img src="https://i.imgur.com/9h3a9xC.png" alt="MOTD" width="650" height="130">
+        <h1 class="text-h1">Bem Vindo</h1>
+        <h2 class="text-h2">Ao melhor servidor de <b>ZP</b> da América Latina</h2>
+        <!-- <img src="https://i.imgur.com/9h3a9xC.png" alt="MOTD" width="650" height="130"> -->
         <br>
         <p class="text-1">Esperamos que você tenha uma excelente experiência de jogo!</p>
     </div>
