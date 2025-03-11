@@ -137,12 +137,6 @@
                     <td class="text-1">+fps</td>
                 </tr>
                 <tr class="table-text">
-                    <td class="text-esp">developer</td>
-                    <td class="text-1">1</td>
-                    <td class="text-1">ativa uma mensagem de debug de desenvolvedor</td>
-                    <td class="text-1">+fps</td>
-                </tr>
-                <tr class="table-text">
                     <td class="text-esp">gl_vsync</td>
                     <td class="text-1">0</td>
                     <td class="text-1">desliga a vsync do cs 1.6</td>
@@ -256,7 +250,7 @@
         <script>
             document.getElementById("copyButton").addEventListener("click", function() {
                 var tempInput = document.createElement("input");
-                tempInput.value = "net_graph 0; cl_showfps 1; fps_max 1000; fps_override 1; fps_modem 1000; gl_fog 0; cl_weather 0; developer 1; gl_vsync 0; gamma 3; cl_shadow 0; cl_sidespeed 999; cl_forwardspeed 999; cl_backspeed 999; fov_angle 70; hud_fastswitch 1";
+                tempInput.value = "net_graph 0; cl_showfps 1; fps_max 1000; fps_override 1; fps_modem 1000; gl_fog 0; cl_weather 0; gl_vsync 0; gamma 3; cl_shadow 0; cl_sidespeed 999; cl_forwardspeed 999; cl_backspeed 999; fov_angle 70; hud_fastswitch 1";
                 document.body.appendChild(tempInput);
                 tempInput.select();
                 document.execCommand("copy");
