@@ -18,21 +18,25 @@
         }
         #menu {
             text-align: center;
-            background-color: #333;
-            padding: 10px;
+            background-color: rgb(32, 32, 32);
+            padding: 1.5rem;
         }
         #menu a {
             text-decoration: none;
             background-color: #333;
             color: #fff;
             border: none;
-            padding: 10px 20px;
+            border-radius: 0.5rem;
+            padding: 0.7rem 1.2rem;
             margin: 5px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: all 0.5s;
+            font-size: 1rem;
+            font-weight: 600;
         }
         #menu a:hover {
             background-color: #701a1a;
+            transition: all 0.5s;
         }
         #menu a[href="contato.html"] {
             background-color: #700;
@@ -42,12 +46,33 @@
         }
         #content {
             text-align: center;
-            margin: 20px;
+            margin: 1rem;
+        }
+        #content img {
+            width: 30rem;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 3rem auto;
+        }
+        .container-li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            gap: 5rem;
+        }
+        .container-a {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
         }
         .text-navegue {
         	text-align: center;
             color: #a7a7a7;
-            font-size: 12px;
+            font-size: 0.8rem;
+            padding: 1rem 0 0 0;
         }
         .text-1 {
             color: #a7a7a7;
@@ -64,12 +89,15 @@
         .text-ctt1 {
             color: #d6d6d6;
             text-decoration: none; /* Remover sublinhado padrão dos links */
-            font-size: 14px;
+            font-size: 1.5rem;
+            font-weight: 900;
+            font-family: fantasy;
             transition: color 0.3s; /* Efeito de transição de cor suave */
         }
         .text-ctt2 {
             color: #a00000;
-            font-size: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
             transition: color 0.3s; /* Efeito de transição de cor suave */
         }
         .text-ctt1:hover, .text-ctt2:hover {
@@ -85,6 +113,10 @@
         .whatsappsvg{
             width: 70px;
         }
+        footer {
+            font-weight: 900;
+            margin: 3rem 0 0 0;
+        }
     </style>
 </head>
 <body>
@@ -99,26 +131,18 @@
         <a href="ajuda.html">Como Jogar</a>
         <a href="contato.html">Contato</a>
     </div>
-    
-    <div id="content">
-        <p class="text-navegue">↑↑↑ NAVEGUE NO MENU ACIMA PARA TIRAR SUAS DÚVIDAS ↑↑↑</p>
-        <p class="text-esp">» CLIQUE EM ALGUMA OPÇÃO PARA COPIAR O LINK AUTOMATICAMENTE «</p>
-	</div>
-    
 
-    <div class="section text-center">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col text-center">
-                    <a href="https://chat.whatsapp.com/BrzgC30hjKaBNGix37MvOh" class="copy-link"><img src="./svg/whatsapp-brands.svg" class="whatsappsvg"></a>
-                    <p><a href="https://chat.whatsapp.com/BrzgC30hjKaBNGix37MvOh"class="text-ctt1 copy-link">Grupo do WhatsApp<br></a>
-                    <a href="https://chat.whatsapp.com/BrzgC30hjKaBNGix37MvOh"class="text-ctt2 copy-link">whatsapp.nightfall<br></a></p>
-                </div>
-                <div class="col text-center">
-                    <a href="https://discord.com/invite/nightfall" class="copy-link"><img src="./svg/discord-brands.svg" class="discordsvg"></a>
-                    <p><a href="https://discord.com/invite/nightfall" class="text-ctt1 copy-link">Discord<br></a>
-                    <a href="https://discord.com/invite/nightfall"class="text-ctt2 copy-link">discord.gg/nightfall</a></p>
-                </div>
+    <div class="container">
+        <div class="container-li">
+            <div class="container-a">
+                <a href="https://chat.whatsapp.com/BrzgC30hjKaBNGix37MvOh" class="copy-link"><img src="./svg/whatsapp-brands.svg" class="whatsappsvg"></a>
+                <p><a href="https://chat.whatsapp.com/BrzgC30hjKaBNGix37MvOh"class="text-ctt1 copy-link">Grupo do WhatsApp<br></a>
+                <a href="https://chat.whatsapp.com/BrzgC30hjKaBNGix37MvOh"class="text-ctt2 copy-link">whatsapp.nightfall<br></a></p>
+            </div>
+            <div class="container-a">
+                <a href="https://discord.com/invite/nightfall" class="copy-link"><img src="./svg/discord-brands.svg" class="discordsvg"></a>
+                <p><a href="https://discord.com/invite/nightfall" class="text-ctt1 copy-link">Discord<br></a>
+                <a href="https://discord.com/invite/nightfall"class="text-ctt2 copy-link">discord.gg/nightfall</a></p>
             </div>
         </div>
     </div>

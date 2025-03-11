@@ -18,21 +18,25 @@
         }
         #menu {
             text-align: center;
-            background-color: #333;
-            padding: 10px;
+            background-color: rgb(32, 32, 32);
+            padding: 1.5rem;
         }
         #menu a {
             text-decoration: none;
             background-color: #333;
             color: #fff;
             border: none;
-            padding: 10px 20px;
+            border-radius: 0.5rem;
+            padding: 0.7rem 1.2rem;
             margin: 5px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: all 0.5s;
+            font-size: 1rem;
+            font-weight: 600;
         }
         #menu a:hover {
             background-color: #701a1a;
+            transition: all 0.5s;
         }
         #menu a[href="ajuda.html"] {
             background-color: #700;
@@ -42,20 +46,31 @@
         }
         #content {
             text-align: center;
-            margin: 20px;
+            margin: 1rem;
+        }
+        #content img {
+            width: 30rem;
         }
         .text-navegue {
         	text-align: center;
             color: #a7a7a7;
-            font-size: 12px;
+            font-size: 0.8rem;
+            padding: 1rem 0 0 0;
         }
-        .text-1 {
-            color: #a7a7a7;
-            font-size: 15px;
+        .text-h1 {
+            color: #eee;
+            font-size: 4rem;
+            font-weight: 900;
+            /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+            font-family: fantasy;
+            text-transform: uppercase;
+            margin: 2rem 0 0 0;
         }
-        .text-2 {
-            color: #c70c0c;
-            font-size: 15px;
+        .text-h2 {
+            color: #D30000;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
         }
         .text-esp {
             color: #e6de0e;
@@ -75,6 +90,10 @@
         .text-ctt1:hover, .text-ctt2:hover {
             color: red; /* Cor quando o mouse passa por cima dos links */
         }
+        footer {
+            font-weight: 900;
+            margin: 3rem 0 0 0;
+        }
     </style>
 </head>
 <body>
@@ -89,10 +108,8 @@
         <a href="contato.html">Contato</a>
     </div>
     <div id="content">
-        <p class="text-navegue">↑↑↑ NAVEGUE NO MENU ACIMA PARA TIRAR SUAS DÚVIDAS ↑↑↑</p>
-        <p class="text-1">EM DESENVOLVIMENTO</p>
-        <br>
-        <p class="text-1">Esperamos que você tenha uma excelente experiência de jogo!</p>
+        <p class="text-h1">EM DESENVOLVIMENTO</p>
+        <p class="text-h2">Esperamos que você tenha uma excelente experiência de jogo!</p>
     </div>
 
     <footer style="border-top: 1px solid #fff; padding: 14px;">
