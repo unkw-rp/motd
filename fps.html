@@ -179,6 +179,12 @@
                     <td class="text-1">gameplay</td>
                 </tr>
                 <tr class="table-text">
+                    <td class="text-esp">hud_fastswitch</td>
+                    <td class="text-1">1</td>
+                    <td class="text-1">habilita a troca rápida de armas</td>
+                    <td class="text-1">gameplay</td>
+                </tr>
+                <tr class="table-text">
                     <td class="text-esp">fov_angle</td>
                     <td class="text-1">70 a 100</td>
                     <td class="text-1">modifica o campo de visão da tela, menor = menos informação</td>
@@ -249,7 +255,7 @@
         <script>
             document.getElementById("copyButton").addEventListener("click", function() {
                 var tempInput = document.createElement("input");
-                tempInput.value = "net_graph 0; cl_showfps 1; fps_max 1000; fps_override 1; fps_modem 1000; gl_fog 0; cl_weather 0; developer 1; gl_vsync 0; gamma 3; cl_shadow 0; cl_sidespeed 999; cl_forwardspeed 999; cl_backspeed 999; fov_angle 70";
+                tempInput.value = "net_graph 0; cl_showfps 1; fps_max 1000; fps_override 1; fps_modem 1000; gl_fog 0; cl_weather 0; developer 1; gl_vsync 0; gamma 3; cl_shadow 0; cl_sidespeed 999; cl_forwardspeed 999; cl_backspeed 999; fov_angle 70; hud_fastswitch 1";
                 document.body.appendChild(tempInput);
                 tempInput.select();
                 document.execCommand("copy");
