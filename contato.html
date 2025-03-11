@@ -13,8 +13,13 @@
         body {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            text-align: center;
             font-family: Arial, sans-serif;
-            margin: auto;
+            margin: 0;
             padding: 0;
             background-color: #121212;
         }
@@ -22,6 +27,7 @@
             text-align: center;
             background-color: rgb(32, 32, 32);
             padding: 1.5rem;
+            width: 100%;
         }
         #menu a {
             text-decoration: none;
@@ -55,8 +61,10 @@
         }
         .container {
             display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             margin: 3rem auto;
         }
         .container-li {
@@ -116,6 +124,7 @@
             width: 4rem;
         }
         footer {
+            width: 100%;
             font-weight: 900;
         }
     </style>
