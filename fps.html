@@ -208,20 +208,21 @@
                 background-color: #a00000;
             }
         </style>
-        <div style="text-align: center; margin-top: 1rem;">
-            <button id="copyButton" class="btn-custom">COPIAR COMANDOS</button>
+        <div class="text-center mt-3">
+            <button id="copyButton" class="btn btn-danger custom-btn">COPIAR</button>
         </div>
 
         <script>
             document.getElementById("copyButton").addEventListener("click", function() {
-                const textToCopy = "net_graph 0; cl_showfps 1; fps_max 1000; fps_override 1; fps_modem 1000; gl_fog 0; cl_weather 0; developer 1; gl_vsync 0; gamma 3; cl_shadow 0; cl_sidespeed 999; cl_forwardspeed 999; cl_backspeed 999; fov_angle 70";
-        
-                navigator.clipboard.writeText(textToCopy).then(function() {
-                    alert("Comandos copiados! Agora basta colar em seu console.");
-                }).catch(function(err) {
-                    console.error("Erro ao copiar texto: ", err);
-                });
-            });
+            var tempInput = document.createElement("input");
+            tempInput.value = "net_graph 0; cl_showfps 1; fps_max 1000; fps_override 1; fps_modem 1000; gl_fog 0; cl_weather 0; developer 1; gl_vsync 0; gamma 3; cl_shadow 0; cl_sidespeed 999; cl_forwardspeed 999; cl_backspeed 999; fov_angle 70";
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            
+            alert("Texto copiado para a área de transferência!");
+        });
         </script>
         <br>
         <p class="text-1">Esperamos que você tenha uma excelente experiência de jogo!</p>
