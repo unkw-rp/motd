@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8bb519652f.js" crossorigin="anonymous"></script>
+    <title>MOTD NF | COPIA NÃO LIXO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+        }
+        #content p {
+            font-size: 0.8rem;
+        }
+        .text-h1 {
+            color: #eee;
+            font-size: 2.5rem;
+            font-weight: 900;
+            /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+            font-family: fantasy;
+            text-transform: uppercase;
+            margin: 2rem 0 0 0;
+        }
+        .text-h2 {
+            color: #D30000;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .text-1 {
+            color: #a7a7a7;
+            font-size: 0.7rem;
+        }
+        .text-2 {
+            color: #D30000;
+            font-size: 0.7rem;
+        }
+        .text-3 {
+            color: #a7a7a7;
+            font-size: 0.7rem;
+        }
+        .text-esp {
+            color: #D30000;
+            font-size: 0.7rem;
+        }
+        #content {
+            text-align: center;
+            margin: 1rem;
+        }
+        .table {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .table-img img {
+            width: 5.6rem;
+            height: 5.6rem;
+        }
+        footer {
+            font-weight: 900;
+            margin: 3rem 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <img src="https://i.imgur.com/ScrQ8j8.png" alt="MOTD" width="550" height="70">
+    </div>
+    <div id="content">
+        <h1 class="text-h1">OTIMIZAÇÃO DE FPS</h1>
+        <br>
+        <h2 class="text-h2">» O QUE LEVA SEU FPS A OSCILAR TANTO? «</h2>
+        <p class="text-1">Apesar do CS 1.6 ser um jogo relativamente leve, pelo fato de ser antigo não conta com alguns recursos básicos, fazendo com que você não consiga extrair 100% do desempenho do seu computador, e infelizmente isso não pode ser alterado.</p>
+        <br>
+        <h2 class="text-h2">» COMANDOS DE CONSOLE PARA OTIMIZAR O FPS «</h2>
+        <p class="text-1">Abaixo, deixaremos alguns comandos que você pode inserir diretamente em seu console, para modificar/desabilitar recursos nativos do CS 1.6, otimizando seu fps!</p>
+        <p class="text-2">Observação: Para abrir seu console, basta apertar ASPAS, abaixo da tecla ESC do seu teclado.</p>
+        <br>
+        <div class="container">
+        <table class="table text-center">
+            <tbody>
+                <tr class="table-text">
+                    <td class="text-esp">comando</td>
+                    <td class="text-1">parâmetros</td>
+                    <td class="text-1">descrição</td>
+                    <td class="text-1">resultado esperado</td>
+                </tr>
+                <tr class="table-text">
+                    <td class="text-esp">cl_showfps</td>
+                    <td class="text-1">1 ou 0</td>
+                    <td class="text-1">desativa/ativa o mostrador de fps no canto esquerdo superior</td>
+                    <td class="text-1">-</td>
+                </tr>
+                <tr class="table-text">
+                    <td class="text-esp">fps_max</td>
+                    <td class="text-1">1000</td>
+                    <td class="text-1">define o fps máximo que seu cs pode rodar</td>
+                    <td class="text-1">-</td>
+                </tr>
+                <tr class="table-text">
+                    <td class="text-esp">fps_override</td>
+                    <td class="text-1">1</td>
+                    <td class="text-1">desativa o limitador de fps do cs 1.6</td>
+                    <td class="text-1">-</td>
+                </tr>
+                <tr class="table-text">
+                    <td class="text-esp">fps_modem</td>
+                    <td class="text-1">1000</td>
+                    <td class="text-1">desativa o limitador de fps do cs 1.6, disponível apenas nas versões antigas do cs 1.6</td>
+                    <td class="text-1">-</td>
+                </tr>
+                <tr class="table-text">
+                    <td class="text-esp">cl_minmodels</td>
+                    <td class="text-1">1 ou 0</td>
+                    <td class="text-1">desativa/ativa as skins personalizadas de player</td>
+                    <td class="text-1">+fps</td>
+                </tr>
+                <tr class="table-text">
+                    <td class="text-esp">gl_fog</td>
+                    <td class="text-1">1 ou 0</td>
+                    <td class="text-1">desativa/ativa os efeitos de névoa do servidor</td>
+                    <td class="text-1">+fps</td>
+                </tr>
+                <tr class="table-text">
+                    <td class="text-esp">cl_weather</td>
+                    <td class="text-1">1 ou 0</td>
+                    <td class="text-1">desativa/ativa os efeitos de clima(chuva) do servidor</td>
+                    <td class="text-1">+fps</td>
+                </tr>
+                <tr class="table-text">
+                    <td class="text-esp">developer</td>
+                    <td class="text-1">1</td>
+                    <td class="text-1">ativa uma mensagem de debug de desenvolvedor</td>
+                    <td class="text-1">+fps</td>
+                </tr>
+                <tr class="table-text">
+                    <td class="text-esp">gl_vsync</td>
+                    <td class="text-1">0</td>
+                    <td class="text-1">desliga a vsync do cs 1.6</td>
+                    <td class="text-1">+fps</td>
+                </tr>
+                <tr class="table-text">
+                    <td class="text-esp">gamma</td>
+                    <td class="text-1">3</td>
+                    <td class="text-1">aumenta levemente a saturação de cor do seu cs</td>
+                    <td class="text-1">+fps / cores</td>
+                </tr>
+                <tr class="table-text">
+                    <td class="text-esp">cl_shadow</td>
+                    <td class="text-1">0</td>
+                    <td class="text-1">desativa as sombras dos jogadores</td>
+                    <td class="text-1">+fps</td>
+                </tr>
+                <tr class="table-text">
+                    <td class="text-esp">cl_sidespeed</td>
+                    <td class="text-1">999</td>
+                    <td class="text-1">tira a limitação de velocidade em se movimentar para os lados</td>
+                    <td class="text-1">gameplay</td>
+                </tr>
+                <tr class="table-text">
+                    <td class="text-esp">cl_forwardspeed</td>
+                    <td class="text-1">999</td>
+                    <td class="text-1">tira a limitação de velocidade em se movimentar para frente</td>
+                    <td class="text-1">gameplay</td>
+                </tr>
+                <tr class="table-text">
+                    <td class="text-esp">cl_backspeed</td>
+                    <td class="text-1">999</td>
+                    <td class="text-1">tira a limitação de velocidade em se movimentar para trás</td>
+                    <td class="text-1">gameplay</td>
+                </tr>
+                <tr class="table-text">
+                    <td class="text-esp">fov_angle</td>
+                    <td class="text-1">70 a 100</td>
+                    <td class="text-1">modifica o campo de visão da tela, menor = menos informação</td>
+                    <td class="text-1">+fps / gameplay</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <p class="text-h2">Caso queira aplicar todos comandos de uma só vez, clique no botão abaixo, abra seu console e aperte CTRL+V !</p>
+        <p class="text-3">Observação: para desativar as skins de jogador, utilize o comando cl_minmodels 1 manualmente.</p>
+        
+        <style>
+            .btn-custom {
+                background-color: #D30000;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 1rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: 0.3s;
+            }
+        
+            .btn-custom:hover {
+                background-color: #a00000;
+            }
+        </style>
+        <div style="text-align: center; margin-top: 1rem;">
+            <button id="copyButton" class="btn-custom">COPIAR COMANDOS</button>
+        </div>
+
+        <script>
+            document.getElementById("copyButton").addEventListener("click", function() {
+                const textToCopy = "net_graph 0; cl_showfps 1; fps_max 1000; fps_override 1; fps_modem 1000; gl_fog 0; cl_weather 0; developer 1; gl_vsync 0; gamma 3; cl_shadow 0; cl_sidespeed 999; cl_forwardspeed 999; cl_backspeed 999; fov_angle 70";
+        
+                navigator.clipboard.writeText(textToCopy).then(function() {
+                    alert("Comandos copiados! Agora basta colar em seu console.");
+                }).catch(function(err) {
+                    console.error("Erro ao copiar texto: ", err);
+                });
+            });
+        </script>
+        <br>
+        <p class="text-1">Esperamos que você tenha uma excelente experiência de jogo!</p>
+    </div>
+
+    <footer style="border-top: 1px solid #fff; padding: 14px;">
+        <p class="text-navegue">Night Fall Gaming © All rights reserved</p>
+    </footer>
+</body>
+</html>
