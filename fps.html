@@ -191,20 +191,49 @@
         <p class="text-3">Observação: para desativar as skins de jogador, utilize o comando cl_minmodels 1 manualmente.</p>
         
         <style>
-            .btn-custom {
+            /* Estilizando o botão */
+            .custom-btn {
+                background-color: #D30000 !important;
+                color: white !important;
+                font-weight: bold;
+                border: none;
+                padding: 10px 20px;
+                text-transform: uppercase;
+                transition: 0.3s;
+                border-radius: 5px;
+            }
+            .custom-btn:hover {
+                background-color: #a00000 !important;
+            }
+        
+            /* Estilizando o popup */
+            .custom-alert {
+                display: none;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #1e1e1e;
+                color: white;
+                padding: 20px;
+                border-radius: 8px;
+                text-align: center;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                z-index: 1000;
+            }
+        
+            /* Botão dentro do popup */
+            .custom-alert button {
                 background-color: #D30000;
                 color: white;
                 border: none;
-                padding: 10px 20px;
-                font-size: 1rem;
-                font-weight: bold;
-                text-transform: uppercase;
-                cursor: pointer;
+                padding: 8px 16px;
+                margin-top: 10px;
                 border-radius: 5px;
-                transition: 0.3s;
+                cursor: pointer;
+                font-weight: bold;
             }
-        
-            .btn-custom:hover {
+            .custom-alert button:hover {
                 background-color: #a00000;
             }
         </style>
@@ -212,17 +241,28 @@
             <button id="copyButton" class="btn btn-danger custom-btn">COPIAR</button>
         </div>
 
+        <div id="customAlert" class="custom-alert">
+            <p>Texto copiado para a área de transferência!</p>
+            <button id="closeAlert">OK</button>
+        </div>
+
         <script>
             document.getElementById("copyButton").addEventListener("click", function() {
-            var tempInput = document.createElement("input");
-            tempInput.value = "net_graph 0; cl_showfps 1; fps_max 1000; fps_override 1; fps_modem 1000; gl_fog 0; cl_weather 0; developer 1; gl_vsync 0; gamma 3; cl_shadow 0; cl_sidespeed 999; cl_forwardspeed 999; cl_backspeed 999; fov_angle 70";
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand("copy");
-            document.body.removeChild(tempInput);
-            
-            alert("Texto copiado para a área de transferência!");
-        });
+                var tempInput = document.createElement("input");
+                tempInput.value = "net_graph 0; cl_showfps 1; fps_max 1000; fps_override 1; fps_modem 1000; gl_fog 0; cl_weather 0; developer 1; gl_vsync 0; gamma 3; cl_shadow 0; cl_sidespeed 999; cl_forwardspeed 999; cl_backspeed 999; fov_angle 70";
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand("copy");
+                document.body.removeChild(tempInput);
+                
+                // Exibir popup personalizado
+                document.getElementById("customAlert").style.display = "block";
+            });
+        
+            // Fechar popup ao clicar no botão "OK"
+            document.getElementById("closeAlert").addEventListener("click", function() {
+                document.getElementById("customAlert").style.display = "none";
+            });
         </script>
         <br>
         <p class="text-1">Esperamos que você tenha uma excelente experiência de jogo!</p>
