@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +11,6 @@
     <title>MOTD NF | COPIA NÃO LIXO</title>
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            justify-items: center;
-            align-items: center;
-            align-content: center;
-            text-align: center;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -52,84 +45,68 @@
         #menu a[href="contato.html"]:hover {
             background-color: #900;
         }
+        #content p {
+            font-size: 0.8rem;
+        }
+        spam {
+            color: #eee;
+        }
+        .text-h1 {
+            color: #eee;
+            font-size: 2.5rem;
+            font-weight: 900;
+            font-family: fantasy;
+            text-transform: uppercase;
+            margin: 2rem 0 0 0;
+        }
+        .text-h2 {
+            color: #D30000;
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .text-h3 {
+            color: #eee;
+            font-size: 1.5rem;
+            font-weight: 900;
+            font-family: fantasy;
+            text-transform: uppercase;
+            margin: 2rem 0 0 0;
+        }
+        .text-1 {
+            color: #a7a7a7;
+            font-size: 0.7rem;
+        }
+        .text-2 {
+            color: #D30000;
+            font-size: 0.7rem;
+        }
+        .text-3 {
+            color: #a7a7a7;
+            font-size: 0.7rem;
+        }
+        .text-esp {
+            color: #D30000;
+            font-size: 0.7rem;
+        }
         #content {
             text-align: center;
             margin: 1rem;
         }
-        #content img {
-            width: 30rem;
-        }
-        .container {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin: 3rem auto;
-        }
-        .container-li {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            gap: 3rem;
-        }
-        .container-a {
+        .table {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
-            gap: 1rem;
         }
-        .text-navegue {
-        	text-align: center;
-            color: #a7a7a7;
-            font-size: 0.8rem;
-            padding: 1rem 0 0 0;
-        }
-        .text-1 {
-            color: #a7a7a7;
-            font-size: 15px;
-        }
-        .text-2 {
-            color: #c70c0c;
-            font-size: 15px;
-        }
-        .text-esp {
-            color: #e6de0e;
-            font-size: 10px;
-        }
-        .text-ctt1 {
-            color: #d6d6d6;
-            text-decoration: none; /* Remover sublinhado padrão dos links */
-            font-size: 1.3rem;
-            font-weight: 900;
-            font-family: fantasy;
-            transition: color 0.3s; /* Efeito de transição de cor suave */
-        }
-        .text-ctt2 {
-            color: #a00000;
-            font-size: 1rem;
-            font-weight: 600;
-            transition: color 0.3s; /* Efeito de transição de cor suave */
-        }
-        .text-ctt1:hover, .text-ctt2:hover {
-            color: red; /* Cor quando o mouse passa por cima dos links */
-        }
-        .box{
-            width: 200px;
-        }
-        .discordsvg{
-            width: 5rem;
-        }
-        .whatsappsvg{
-            width: 4rem;
+        .table-img img {
+            width: 5.6rem;
+            height: 5.6rem;
         }
         footer {
-            width: 100%;
             font-weight: 900;
+            margin: 3rem 0 0 0;
         }
     </style>
 </head>
@@ -137,7 +114,6 @@
     <div id="content">
         <img src="https://i.imgur.com/ScrQ8j8.png" alt="MOTD" width="550" height="70">
     </div>
-
     <div id="menu">
         <a href="index.html">Início</a>
         <a href="regras.html">Regras</a>
@@ -146,54 +122,20 @@
         <a href="contato.html">Contato</a>
     </div>
 
-
-    <div class="container">
-        <div class="container-li">
-            <div class="container-a">
-                <a href="https://chat.whatsapp.com/BrzgC30hjKaBNGix37MvOh" class="copy-link"><img src="./svg/whatsapp-brands.svg" class="whatsappsvg"></a>
-                <p><a href="https://chat.whatsapp.com/BrzgC30hjKaBNGix37MvOh"class="text-ctt1 copy-link">Grupo do WhatsApp<br></a>
-                <a href="https://chat.whatsapp.com/BrzgC30hjKaBNGix37MvOh"class="text-ctt2 copy-link">whatsapp.nightfall<br></a></p>
-            </div>
-            <div class="container-a">
-                <a href="https://discord.com/invite/nightfall" class="copy-link"><img src="./svg/discord-brands.svg" class="discordsvg"></a>
-                <p><a href="https://discord.com/invite/nightfall" class="text-ctt1 copy-link">Discord<br></a>
-                <a href="https://discord.com/invite/nightfall"class="text-ctt2 copy-link">discord.gg/nightfall</a></p>
-            </div>
-        </div>
-    </div>
-
+    <div id="content">
+        <h1 class="text-h1">PARTICIPE DE NOSSO DISCORD</h1>
+        <br>
+        <h2 class="text-h2">DISCORD.GG/NIGHTFALL</h2>
+        <br>
+        <h1 class="text-h1">NOSSO GRUPO DO WHATSAPP</h1>
+        <br>
+        <th><img src="https://i.imgur.com/RuGfQwG.png" width="200" height="200"></th>
+        <br>
+        <br>
+        <h3 class="text-h3">PRECISA FALAR COM A STAFF?</h3>
+        <h2 class="text-h2">TEIXEIRA: <spam>61 9 9964-7021</spam> | RP: <spam>19 9 9518-0459</spam></h2>
     <footer style="border-top: 1px solid #fff; padding: 14px;">
         <p class="text-navegue">Night Fall Gaming © All rights reserved</p>
     </footer>
-
-    <script>
-        function copyToClipboard(text) {
-            const tempInput = document.createElement("input");
-            tempInput.value = text;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand("copy");
-            document.body.removeChild(tempInput);
-        }
-    </script>
-
-    <script>
-        function copyToClipboard(text) {
-            var tempInput = document.createElement("input");
-            tempInput.value = text;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand("copy");
-            document.body.removeChild(tempInput);
-        }
-        var copyLinks = document.querySelectorAll('.copy-link');
-        for (var i = 0; i < copyLinks.length; i++) {
-            copyLinks[i].addEventListener('click', function(event) {
-                event.preventDefault();
-                var url = this.getAttribute('href');
-                copyToClipboard(url);
-            });
-        }
-    </script>
 </body>
 </html>
