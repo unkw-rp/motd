@@ -1,0 +1,107 @@
+body {
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	font-family:sans-serif;
+	background-image: url("./img/site/background.jpg");
+	background-repeat: repeat;
+	background-attachment:fixed;
+}
+h2 {
+	color:#89CFF0; 
+	margin: 0; 
+	font-size:30px;
+}
+h2 a:hover { text-decoration: underline; }
+h2 a { 
+	text-decoration: none;
+	color: inherit; 
+}
+iframe {
+        display: block;
+        background: #000;
+        border-color: #6495ED; 
+	border-top: 2px;
+	border-left: 2px;
+	border-right: 2px;
+        height: 91.6vh;
+        width: 100%;
+}
+table {
+	width: 100%;
+	color: #6495ED; 
+	background: rgba(6, 6, 6, 0.5);
+	box-shadow: 0px 4px 5px rgba(0,0,0,.2);
+	border-radius: 10px;
+	border-style: inset;
+	border-width: 2px;
+	border-top: 2px;
+	border-left: 2px;
+	border-right: 2px;
+	border-radius: 5px;
+	border-color: #6495ED; 
+	border-collapse: collapse;
+}
+td:hover, th:hover { color:white; }
+td {
+	text-shadow: 0px 1px 3px black;
+	text-align: center;
+	color: #A9A9A9;
+	height:50px;
+	font-size:18px;
+}
+td a:hover { 
+	color:#6495ED; 
+	cursor: pointer;
+}
+td a { 
+	color:white; 
+	font-weight: bold;
+	text-decoration: none;
+}
+tr {
+	font-size:20px;
+}
+img { 
+	width:50px;
+	margin: auto;
+	display: block;
+}
+#hd { 
+	background: rgb(43, 44, 55); 
+	padding: 20px; 
+	border-color: #6495ED; 
+	border-top:2px; 
+	border-left:2px; 
+	border-right:2px; 
+	border-style:solid; 
+}
+#on:hover, #off:hover { background-size: 35px; }
+#on, #off {  
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#on { background-image: url("./img/site/on.png"); }
+#off { background-image: url("./img/site/off.png"); }
+#a {
+	height: 50px;
+	background: rgba(83, 84, 95, 0.9);
+}
+#b { background: rgba(0, 0, 0, 0.3); }
+.button:hover {
+	color: rgba(255, 255, 255, 1);
+	box-shadow: 0 5px 15px rgba(255, 255, 255, .3);
+	cursor:pointer;
+}
+.button {
+	float:right;
+	height:40px;
+	width:250px;
+	background-color: #6495ED;
+	font-size: 25px;
+	color:white;
+	border: none;
+	border-radius:5px;
+	font-weight:bold;
+}
