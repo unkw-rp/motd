@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,13 +40,17 @@
             background-color: #31b9db;
             transition: all 0.5s;
         }
-        #menu a[href="4fun_index.html"] {
+        #menu a[href="4fun_ajuda.html"] {
             background-color: #31b9db;
         }
-        #menu a[href="4fun_index.html"]:hover {
+        #menu a[href="4fun_ajuda.html"]:hover {
             background-color: #005a75;
         }
         #content {
+            text-align: center;
+            margin: 1rem;
+        }
+        #central {
             text-align: center;
             margin: 1rem;
         }
@@ -65,12 +69,12 @@
         }
         .text-h1 {
             color: #e9e7e7;
-            font-size: 6.5rem;
+            font-size: 4rem;
             font-weight: 900;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             font-family: fantasy;
             text-transform: uppercase;
             margin: 2rem 0 0 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         .text-h2 {
             color: #e9e7e7;
@@ -78,11 +82,6 @@
             font-weight: 600;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             text-transform: uppercase;
-        }
-        .text-1 {
-            color: #e9e7e7;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            font-size: 0.7rem;
         }
         .text-esp {
             color: #e6de0e;
@@ -94,13 +93,18 @@
             font-size: 14px;
             transition: color 0.3s; /* Efeito de transição de cor suave */
         }
+        .text-1 {
+            color: #e9e7e7;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 0.7rem;
+        }
         .text-ctt2 {
-            color: #31b9db;
+            color: #a00000;
             font-size: 12px;
             transition: color 0.3s; /* Efeito de transição de cor suave */
         }
         .text-ctt1:hover, .text-ctt2:hover {
-            color: #31b9db; /* Cor quando o mouse passa por cima dos links */
+            color: red; /* Cor quando o mouse passa por cima dos links */
         }
         footer {
             font-weight: 900;
@@ -119,11 +123,10 @@
         <a href="4fun_ajuda.html">Skins</a>
         <a href="4fun_contato.html">Grupos</a>
     </div>
+    <div id="central">
+        <p class="text-h1">PÁGINA EM DESENVOLVIMENTO</p>
+    </div>
     <div id="content">
-        <h1 class="text-h1">Bem Vindo</h1>
-        <h2 class="text-h2">Ao melhor servidor de <b>4FUN</b> da América Latina</h2>
-        <!-- <img src="https://i.imgur.com/9h3a9xC.png" alt="MOTD" width="650" height="130"> -->
-        <br>
         <p class="text-1">Esperamos que você tenha uma excelente experiência de jogo!</p>
     </div>
 

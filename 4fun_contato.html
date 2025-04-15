@@ -14,14 +14,13 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            /* background: linear-gradient(30deg, #259ab8 0%, #4b70773d 100%); */
             background-color: #749ba5;
-            min-height: 20vh;
         }
         #menu {
             text-align: center;
             background-color: rgb(245, 245, 245);
             padding: 1.5rem;
+            width: 100%;
         }
         #menu a {
             text-decoration: none;
@@ -40,21 +39,23 @@
             background-color: #31b9db;
             transition: all 0.5s;
         }
-        #menu a[href="4fun_index.html"] {
+        #menu a[href="4fun_contato.html"] {
             background-color: #31b9db;
         }
-        #menu a[href="4fun_index.html"]:hover {
+        #menu a[href="4fun_contato.html"]:hover {
             background-color: #005a75;
         }
-        #content {
-            text-align: center;
-            margin: 1rem;
+        #content p {
+            font-size: 0.8rem;
         }
         #content img {
             width: 30rem;
         }
-        #content p {
-            font-size: 0.8rem;
+        #content2 img {
+            width: 20rem;
+        }
+        spam {
+            color: #eee;
         }
         .text-navegue {
         	text-align: center;
@@ -65,42 +66,59 @@
         }
         .text-h1 {
             color: #e9e7e7;
-            font-size: 6.5rem;
+            font-size: 2.5rem;
             font-weight: 900;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             font-family: fantasy;
             text-transform: uppercase;
             margin: 2rem 0 0 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         .text-h2 {
             color: #e9e7e7;
             font-size: 1rem;
             font-weight: 600;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .text-h3 {
+            color: #e9e7e7;
+            font-size: 1.5rem;
+            font-weight: 900;
+            font-family: fantasy;
+            text-transform: uppercase;
+            margin: 2rem 0 0 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         .text-1 {
-            color: #e9e7e7;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: #a7a7a7;
+            font-size: 0.7rem;
+        }
+        .text-2 {
+            color: #D30000;
+            font-size: 0.7rem;
+        }
+        .text-3 {
+            color: #a7a7a7;
             font-size: 0.7rem;
         }
         .text-esp {
-            color: #e6de0e;
-            font-size: 10px;
+            color: #D30000;
+            font-size: 0.7rem;
         }
-        .text-ctt1 {
-            color: #d6d6d6;
-            text-decoration: none; /* Remover sublinhado padrão dos links */
-            font-size: 14px;
-            transition: color 0.3s; /* Efeito de transição de cor suave */
+        #content {
+            text-align: center;
+            margin: 1rem;
         }
-        .text-ctt2 {
-            color: #31b9db;
-            font-size: 12px;
-            transition: color 0.3s; /* Efeito de transição de cor suave */
+        #content2 {
+            text-align: center;
+            margin: 1rem;
         }
-        .text-ctt1:hover, .text-ctt2:hover {
-            color: #31b9db; /* Cor quando o mouse passa por cima dos links */
+        .table {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
         }
         footer {
             font-weight: 900;
@@ -119,14 +137,17 @@
         <a href="4fun_ajuda.html">Skins</a>
         <a href="4fun_contato.html">Grupos</a>
     </div>
-    <div id="content">
-        <h1 class="text-h1">Bem Vindo</h1>
-        <h2 class="text-h2">Ao melhor servidor de <b>4FUN</b> da América Latina</h2>
-        <!-- <img src="https://i.imgur.com/9h3a9xC.png" alt="MOTD" width="650" height="130"> -->
-        <br>
-        <p class="text-1">Esperamos que você tenha uma excelente experiência de jogo!</p>
-    </div>
 
+    <div id="content2">
+        <h1 class="text-h1">PARTICIPE DE NOSSO DISCORD</h1>
+        <br>
+        <h2 class="text-h2">DISCORD.GG/NIGHTFALL</h2>
+        <br>
+        <h1 class="text-h1">NOSSO GRUPO DO WHATSAPP</h1>
+        <br>
+        <img src="https://i.imgur.com/m52SlFf.png">
+        <br>
+    </div>
     <footer style="border-top: 1px solid #fff; padding: 14px;">
         <p class="text-navegue">NIGHTFALLGAMING.pro © Todos os direitos reservados.</p>
     </footer>
