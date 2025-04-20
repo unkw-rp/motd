@@ -11,23 +11,17 @@
     <title>MOTD NF | COPIA NÃO LIXO</title>
     <style>
         body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            justify-items: center;
-            align-items: center;
-            align-content: center;
-            text-align: center;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            /* background: linear-gradient(30deg, #259ab8 0%, #4b70773d 100%); */
             background-color: #749ba5;
+            min-height: 20vh;
         }
         #menu {
             text-align: center;
             background-color: rgb(245, 245, 245);
             padding: 1.5rem;
-            width: 100%;
         }
         #menu a {
             text-decoration: none;
@@ -56,55 +50,42 @@
             text-align: center;
             margin: 1rem;
         }
+        #central {
+            text-align: center;
+            margin: 1rem;
+        }
         #content img {
             width: 30rem;
         }
-        .container {
-            /* display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center; */
-        }
-        .table {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        .table-img img {
-            width: 5.6rem;
-            height: 5.6rem;
+        #content p {
+            font-size: 0.8rem;
         }
         .text-navegue {
         	text-align: center;
-            color: #a7a7a7;
-            font-size: 0.8rem;
+            color: #e9e7e7;
+            font-size: 0.74rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 1rem 0 0 0;
         }
-        .text-1 {
-            color: #00ffff;
-            font-size: 12px;
-        }
-        .text-2 {
-            color: #ececec;
-            font-size: 12px;
-        }
-        .text-3 {
-            color: #ececec;
-            font-size: 12px;
-        }
-        .text-esp {
-            color: #929292;
-            font-size: 12px;
-            text-align: center
+        .text-h1 {
+            color: #e9e7e7;
+            font-size: 4rem;
+            font-weight: 900;
+            font-family: fantasy;
+            text-transform: uppercase;
+            margin: 2rem 0 0 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         .text-h2 {
             color: #e9e7e7;
             font-size: 1rem;
             font-weight: 600;
-            text-transform: uppercase;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-transform: uppercase;
+        }
+        .text-esp {
+            color: #e6de0e;
+            font-size: 10px;
         }
         .text-ctt1 {
             color: #d6d6d6;
@@ -112,18 +93,18 @@
             font-size: 14px;
             transition: color 0.3s; /* Efeito de transição de cor suave */
         }
+        .text-1 {
+            color: #e9e7e7;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 0.7rem;
+        }
         .text-ctt2 {
             color: #a00000;
             font-size: 12px;
             transition: color 0.3s; /* Efeito de transição de cor suave */
         }
         .text-ctt1:hover, .text-ctt2:hover {
-            color: red; /*
-             Cor quando o mouse passa por cima dos links */
-        }
-        .text-cab {
-            color: #c70c0c;
-            font-size: 15px;
+            color: red; /* Cor quando o mouse passa por cima dos links */
         }
         footer {
             font-weight: 900;
@@ -142,11 +123,165 @@
         <a href="4fun_ajuda.html">Skins</a>
         <a href="4fun_contato.html">Grupos</a>
     </div>
-    <br>
-    <h2 class="text-h2">» USE O SCROLL DO MOUSE PARA ROLAR A PÁGINA «</h2>
-    <br>
-    
-    <br>
+    <div id="central">
+        <p class="text-h1">APOIE O SERVIDOR</p>
+        <h2 class="text-h2">SEJA VIP/ADMIN !</h2>
+        <div class="container">
+            <table class="table table-dark table-bordered">
+                <p class="text-navegue">Gostou de jogar em nosso servidor? Aproveite os benefícios de ser VIP/ADMIN!</p>
+                <thead>
+                    <tr class="text-center">
+                        <th scope="col" class="text-1">BENEFÍCIOS</th>
+                        <th scope="col" class="text-1" style="color: #ffffff;">FREE</th>
+                        <th scope="col" class="text-1" style="color: #a7a7a7;">VIP TAG</th>
+                        <th scope="col" class="text-1" style="color: #ffd900;">VIP OURO</th>
+                        <th scope="col" class="text-1" style="color: #40e60e;">ADMIN</th>
+                        <th scope="col" class="text-1" style="color: #ff0800;">COLABORADOR</th>
+                    </tr>
+                    <!-- <tr class="text-center">
+                        <td class="text-1">PREÇO EM REAL</td>
+                        <td style="color: #e9e7e7;">R$ 25,00</td>
+                        <td style="color: #e9e7e7;">R$ 100,00</td>
+                        <td style="color: #e9e7e7;">-</td>
+                    </tr> -->
+                    <tr class="text-center">
+                        <td class="text-1">Preço em NF$</td>
+                        <td class="text-1" style="color: #e9e7e7;">-</td>
+                        <td class="text-1" style="color: #e9e7e7;">GRÁTIS</td>
+                        <td class="text-1" style="color: #e9e7e7;">3200</td>
+                        <td class="text-1" style="color: #e9e7e7;">5400</td>
+                        <td class="text-1" style="color: #e9e7e7;">20000</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center">
+                        <td class="text-1">NF$ por Kill</td>
+                        <td class="text-1" style="color: #e9e7e7;">1</td>
+                        <td class="text-1" style="color: #e9e7e7;">2</td>
+                        <td class="text-1" style="color: #e9e7e7;">2</td>
+                        <td class="text-1" style="color: #e9e7e7;">2</td>
+                        <td class="text-1" style="color: #e9e7e7;">3</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">NF$ por Kill na Faca</td>
+                        <td class="text-1" style="color: #e9e7e7;">2</td>
+                        <td class="text-1" style="color: #e9e7e7;">3</td>
+                        <td class="text-1" style="color: #e9e7e7;">5</td>
+                        <td class="text-1" style="color: #e9e7e7;">5</td>
+                        <td class="text-1" style="color: #e9e7e7;">6</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">NF$ por Plant ou Defuse da C4</td>
+                        <td class="text-1" style="color: #e9e7e7;">2</td>
+                        <td class="text-1" style="color: #e9e7e7;">3</td>
+                        <td class="text-1" style="color: #e9e7e7;">5</td>
+                        <td class="text-1" style="color: #e9e7e7;">5</td>
+                        <td class="text-1" style="color: #e9e7e7;">6</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">NF$ por MVP (MÍNIMO 10 ONLINE)</td>
+                        <td class="text-1" style="color: #e9e7e7;">5</td>
+                        <td class="text-1" style="color: #e9e7e7;">5</td>
+                        <td class="text-1" style="color: #e9e7e7;">10</td>
+                        <td class="text-1" style="color: #e9e7e7;">10</td>
+                        <td class="text-1" style="color: #e9e7e7;">15</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">Tag VIP nos scores (TAB)</td>
+                        <td class="text-1" style="color: #e9e7e7;">-</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">Tag Exclusiva no CHAT</td>
+                        <td class="text-1" style="color: #e9e7e7;">-</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">Comprar AK de CT, e M4 de TR</td>
+                        <td class="text-1" style="color: #e9e7e7;">-</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">HealthNade (Granada de Vida)</td>
+                        <td class="text-1" style="color: #e9e7e7;">-</td>
+                        <td class="text-1" style="color: #e9e7e7;">-</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">HealthNade - Função de Beber</td>
+                        <td class="text-1" style="color: #e9e7e7;">-</td>
+                        <td class="text-1" style="color: #e9e7e7;">-</td>
+                        <td class="text-1" style="color: #e9e7e7;">-</td>
+                        <td class="text-1" style="color: #e9e7e7;">-</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">Skin Exclusiva de Player</td>
+                        <td class="text-1" style="color: #e9e7e7;">-</td>
+                        <td class="text-1" style="color: #e9e7e7;">-</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">Skin Exclusiva de Armas</td>
+                        <td class="text-1" style="color: #e9e7e7;">-</td>
+                        <td class="text-1" style="color: #e9e7e7;">-</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">Say @</td>
+                        <td class="text-1" style="color: #e9e7e7;">-</td>
+                        <td class="text-1" style="color: #e9e7e7;">-</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">Iniciar VoteMap</td>
+                        <td class="text-1" style="color: #e9e7e7;">-</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                        <td class="text-1" style="color: #e9e7e7;">SIM</td>
+                    </tr>
+                    <!-- <tr class="text-center">
+                        <td class="text-1">VIP no Zombie Escape</td>
+                        <td style="color: #e9e7e7;">-</td>
+                        <td style="color: #e9e7e7;">-</td>
+                        <td style="color: #e9e7e7;">SIM</td>
+                        <td style="color: #e9e7e7;">SIM</td>
+                        <td style="color: #e9e7e7;">SIM</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">VIP no REZombie</td>
+                        <td style="color: #e9e7e7;">-</td>
+                        <td style="color: #e9e7e7;">-</td>
+                        <td style="color: #e9e7e7;">SIM</td>
+                        <td style="color: #e9e7e7;">SIM</td>
+                        <td style="color: #e9e7e7;">SIM</td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div class="text-center mt-4">
+                <a href="4fun_buy_vips.html" class="btn btn-danger" style="background-color: #31b9db !important; border: none;">Tenho Interesse</a>
+            </div>
+        </div>
+    </div>
+
     <footer style="border-top: 1px solid #fff; padding: 14px;">
         <p class="text-navegue">NIGHTFALLGAMING.pro © Todos os direitos reservados.</p>
     </footer>

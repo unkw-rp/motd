@@ -56,6 +56,11 @@
             font-size: 0.8rem;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
+        .text-5 {
+            color: #b9f1ff;
+            font-size: 0.8rem;
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+        }
         .text-esp {
             color: #e6de0e;
             font-size: 0.7rem;
@@ -151,9 +156,9 @@
                     <p class="text-2"><span class="text-4">2.</span> Com o <span class="text-4">NF$</span> em sua conta, entre no servidor e abra o menu <span class="text-4">/cargos</span></p>
                     <p class="text-2"><span class="text-4">3.</span> No menu, selecione a opção <span class="text-4">resgatar cargo</span></p>
                     <p class="text-2"><span class="text-4">4.</span> Escolha o cargo desejado e <span class="text-4">confirme o resgaste</span> do cargo desejado!</p>
-                    <br>
                     <div class="text-center mt-3">
-                        <button id="copyButton" class="btn btn-danger custom-btn">COPIAR URL DA LOJA</button>
+                        <p class="text-navegue">Link da Loja: <span class="text-5">nightfallgaming.pro</span></p>
+                        <button id="copyButton" class="btn btn-danger custom-btn">COPIAR LINK</button>
                     </div>
                 </div>
             </div>
@@ -167,8 +172,12 @@
 
         <script>
             document.getElementById("copyButton").addEventListener("click", function() {
-                // Abre o link no navegador padrão
-                window.open("https://nightfallgaming.pro/loja", "_blank");
+                var tempInput = document.createElement("input");
+                tempInput.value = "nightfallgaming.pro";
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand("copy");
+                document.body.removeChild(tempInput);
                 
                 // Exibir popup personalizado
                 document.getElementById("customAlert").style.display = "block";
