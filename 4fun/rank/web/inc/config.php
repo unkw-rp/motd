@@ -15,7 +15,7 @@ define('DB_CHAR', 'utf8'); // latin1 or utf8
 
 // To add more servers, simply copy and paste the array line on a new line with new values.
 $servers = array(
-	array('ip' => 'IP', 	'port' =>	'PORT', 	'mysql_table1' => 'rank_system', 	'mysql_table2' => 'weapon_kills'),
+	array('ip' => '104.234.189.173', 	'port' =>	'27258', 	'mysql_table1' => 'rank_system', 	'mysql_table2' => 'weapon_kills'),
 );
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CUSTOMIZABLES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
