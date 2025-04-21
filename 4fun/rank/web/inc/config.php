@@ -2,15 +2,15 @@
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ MAIN SETTINGS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-$main_site = 'http://localhost/'; // Where to redirect anyone to after clicking "Back to site" button of the home page. (forum, home site etc.)
-$main_url = 'http://localhost/web/'; // The slash at the end is important!
-$main_name = 'Rank System Ultimate';
+$main_site = 'http://motd.nightfallgaming.pro/4fun/4fun_index.html'; // Where to redirect anyone to after clicking "Back to site" button of the home page. (forum, home site etc.)
+$main_url = 'http://motd.nightfallgaming.pro/4fun/rank/web/'; // The slash at the end is important!
+$main_name = 'NightFall 4FUN';
 $default_order = '13'; // How to order the top players by default in the site. (0 = XP | 1 = Nick | 2 = Kills | 3 = Assists | 4 = Deaths | 5 = Skill | 6 = Headshots | 7 = Bombs Planted | 8 = Bombs Exploded | 9 = Bombs Defused | 10 = Rounds Won | 11 = MVP | 12 = Rank | 13 = Overall)
 
-define('DB_HOST', '127.0.0.1:3307');
-define('DB_NAME', 'mysql');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_HOST', '156.67.72.1');
+define('DB_NAME', 'u761724314_nf');
+define('DB_USER', 'u761724314_nf');
+define('DB_PASS', '!ra102818UL)');
 define('DB_CHAR', 'utf8'); // latin1 or utf8
 
 // To add more servers, simply copy and paste the array line on a new line with new values.
