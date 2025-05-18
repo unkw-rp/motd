@@ -60,44 +60,19 @@
             width: 30rem;
         }
         .container {
-            /* display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center; */
-        }
-        .table {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        .table-img img {
-            width: 5.6rem;
-            height: 5.6rem;
+            margin-top: 2rem;
         }
         .text-navegue {
-        	text-align: center;
+            text-align: center;
             color: #a7a7a7;
             font-size: 0.8rem;
         }
-        .text-1 {
-            color: #00ffff;
-            font-size: 12px;
-        }
-        .text-2 {
-            color: #ececec;
-            font-size: 12px;
-        }
-        .text-3 {
-            color: #ececec;
-            font-size: 12px;
-        }
-        .text-esp {
-            color: #929292;
-            font-size: 12px;
-            text-align: center
+        .text-h1 {
+            color: #D30000;
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin: 2rem 0 0 0;
         }
         .text-h2 {
             color: #D30000;
@@ -105,24 +80,41 @@
             font-weight: 600;
             text-transform: uppercase;
         }
-        .text-ctt1 {
-            color: #d6d6d6;
-            text-decoration: none; /* Remover sublinhado padrão dos links */
-            font-size: 14px;
-            transition: color 0.3s; /* Efeito de transição de cor suave */
-        }
-        .text-ctt2 {
-            color: #a00000;
+        .text-1 {
+            color: #ececec;
             font-size: 12px;
-            transition: color 0.3s; /* Efeito de transição de cor suave */
         }
-        .text-ctt1:hover, .text-ctt2:hover {
-            color: red; /*
-             Cor quando o mouse passa por cima dos links */
+        .text-2 {
+            color: #4e4e4e;
+            font-size: 12px;
         }
-        .text-cab {
-            color: #c70c0c;
-            font-size: 15px;
+        .text-esp {
+            color: #929292;
+            font-size: 12px;
+            text-align: center;
+        }
+        .table {
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+        .table-dark {
+            background-color: #1a1a1a;
+        }
+        .table-dark td, .table-dark th {
+            border-color: #333;
+        }
+        .custom-btn {
+            background-color: #D30000 !important;
+            color: white !important;
+            font-weight: bold;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+        .custom-btn:hover {
+            background-color: #900 !important;
         }
         footer {
             font-weight: 900;
@@ -141,244 +133,183 @@
         <a href="ajuda.html">Como Jogar</a>
         <a href="contato.html">Contato</a>
     </div>
-    <br>
-    <h2 class="text-h2">» USE O SCROLL DO MOUSE PARA ROLAR A PÁGINA «</h2>
-    <br>
     <div class="container">
-        
-        <table class="table text-center">
-            <tbody>
-                <tr class="table-text">
-                    <th><img src="https://i.imgur.com/571Ww0W.png" alt="BENEFICIOS" width="150" height="150"></th>
-                    <th><img src="https://i.imgur.com/sXB7qgY.png" alt="OURO" width="150" height="150"></th>
-                    <th><img src="https://i.imgur.com/svEIt3r.png" alt="PLATINA" width="150" height="150"></th>
-                    <th><img src="https://i.imgur.com/ZYVESEB.png" alt="RUBI" width="150" height="150"></th>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Nomenclatura:</td>
-                    <td class="text-1">Ouro</td>
-                    <td class="text-1">Platina</td>
-                    <td class="text-1">Rubi</td>
-                </tr>
-               <!--  <tr class="table-text">
-                    <td class="text-esp">Contribuição Mensal:</td>
-                    <td class="text-1">R$ 50,00</td>
-                    <td class="text-1">R$ 80,00</td>
-                    <td class="text-1">R$ 120,00</td>
-                </tr> -->
-                <tr class="table-text">
-                    <td class="text-esp">AmmoPacks:</td>
-                    <td class="text-1">250</td>
-                    <td class="text-1">400</td>
-                    <td class="text-1">600</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Night Fall Cash:</td>
-                    <td class="text-1">25</td>
-                    <td class="text-1">40</td>
-                    <td class="text-1">60</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Multiplicador de Dano:</td>
-                    <td class="text-1">105%</td>
-                    <td class="text-1">105%</td>
-                    <td class="text-1">105%</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Dano p/ Pack Extra:</td>
-                    <td class="text-1">1000</td>
-                    <td class="text-1">1000</td>
-                    <td class="text-1">1000</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Dano p/ XP Extra:</td>
-                    <td class="text-1">1000</td>
-                    <td class="text-1">1000</td>
-                    <td class="text-1">1000</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Chat Verde:</td>
-                    <td class="text-1">Sim</td>
-                    <td class="text-1">Sim</td>
-                    <td class="text-1">Sim</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Tag Exclusiva no Chat:</td>
-                    <td class="text-1">Sim</td>
-                    <td class="text-1">Sim</td>
-                    <td class="text-1">Sim</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Colete por Round:</td>
-                    <td class="text-1">15</td>
-                    <td class="text-1">15</td>
-                    <td class="text-1">25</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Arma Extra por Round:</td>
-                    <td class="text-1">XM1014</td>
-                    <td class="text-1">XM1014</td>
-                    <td class="text-1">XM1014</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Say @:</td>
-                    <td class="text-1">Não</td>
-                    <td class="text-1">Não</td>
-                    <td class="text-1">Não</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Slots de Skill Passiva (Zombie):</td>
-                    <td class="text-1">2</td>
-                    <td class="text-1">2</td>
-                    <td class="text-1">2</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Slots de Skill Passiva (Humano):</td>
-                    <td class="text-1">3</td>
-                    <td class="text-1">3</td>
-                    <td class="text-1">3</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Grupo da Staff:</td>
-                    <td class="text-1">Não</td>
-                    <td class="text-1">Não</td>
-                    <td class="text-1">Não</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Acesso ao server de Desenvolvimento:</td>
-                    <td class="text-1">Não</td>
-                    <td class="text-1">Não</td>
-                    <td class="text-1">Não</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Vip 1 Mês para Amigo:</td>
-                    <td class="text-1">Não</td>
-                    <td class="text-1">Não</td>
-                    <td class="text-1">Ouro</td>
-                </tr>
-            </tbody>
-        </table>
+        <p class="text-h1">APOIE O SERVIDOR</p>
+        <h2 class="text-h2">SEJA VIP !</h2>
+        <div class="container" style="text-align: center;">
+            <table class="table table-dark table-bordered mx-auto" style="width: auto;">
+                <p class="text-navegue">Gostou de jogar em nosso servidor? Aproveite os benefícios de ser VIP !</p>
+                <thead>
+                    <tr class="text-center">
+                        <th scope="col" class="text-1">BENEFÍCIOS</th>
+                        <th scope="col" class="text-1" style="color: #ffd900;">OURO</th>
+                        <th scope="col" class="text-1" style="color: #95ffb8;">PLATINA</th>
+                        <th scope="col" class="text-1" style="color: #ff0800;">RUBI</th>
+                        <th scope="col" class="text-1" style="color: #00ffff;">DIAMANTE</th>
+                        <th scope="col" class="text-1" style="color: #ff9100;">SUPREMO</th>
+                        <th scope="col" class="text-1" style="color: #ff00dd;">ZOMBIE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr class="text-center">
+                        <td class="text-1">AmmoPacks</td>
+                        <td class="text-1">250</td>
+                        <td class="text-1">400</td>
+                        <td class="text-1">600</td>
+                        <td class="text-1">900</td>
+                        <td class="text-1">1250</td>
+                        <td class="text-1">2250</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">Night Fall Cash</td>
+                        <td class="text-1">25</td>
+                        <td class="text-1">40</td>
+                        <td class="text-1">60</td>
+                        <td class="text-1">90</td>
+                        <td class="text-1">125</td>
+                        <td class="text-1">225</td>
+                    </tr> -->
+                    <tr class="text-center">
+                        <td class="text-1"><span style="color: #ff0000;">NF$</span> por ficar Online</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-1">Sim</td>
+                        <td class="text-1">Sim</td>
+                        <td class="text-1">Sim</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1"><span style="color: #ff0000;">NF$</span> por Kill/Infecção</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-1">Sim</td>
+                        <td class="text-1">Sim</td>
+                        <td class="text-1">Sim</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">Multiplicador de <span style="color: #ff8f8f;">Dano</span></td>
+                        <td class="text-1">105%</td>
+                        <td class="text-1">105%</td>
+                        <td class="text-1">105%</td>
+                        <td class="text-1">110%</td>
+                        <td class="text-1">110%</td>
+                        <td class="text-1">130%</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">Dano p/ <span style="color: #00ffff;">AmmoPack Extra</span></td>
+                        <td class="text-1">1000</td>
+                        <td class="text-1">1000</td>
+                        <td class="text-1">1000</td>
+                        <td class="text-1">700</td>
+                        <td class="text-1">700</td>
+                        <td class="text-1">500</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">Dano p/ <span style="color: #00ffff;">XP Extra</span></td>
+                        <td class="text-1">1000</td>
+                        <td class="text-1">1000</td>
+                        <td class="text-1">1000</td>
+                        <td class="text-1">700</td>
+                        <td class="text-1">700</td>
+                        <td class="text-1">500</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1"><span style="color: #2bff00;">Chat Verde</span></td>
+                        <td class="text-1">Sim</td>
+                        <td class="text-1">Sim</td>
+                        <td class="text-1">Sim</td>
+                        <td class="text-1">Sim</td>
+                        <td class="text-1">Sim</td>
+                        <td class="text-1">Sim</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1"><span style="color: #2bff00;">Tag no Chat</span></td>
+                        <td class="text-1">Sim</td>
+                        <td class="text-1">Sim</td>
+                        <td class="text-1">Sim</td>
+                        <td class="text-1">Sim</td>
+                        <td class="text-1">Sim</td>
+                        <td class="text-1">Sim</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1"><span style="color: #00ffff;">Colete</span> por Round</td>
+                        <td class="text-1">15</td>
+                        <td class="text-1">15</td>
+                        <td class="text-1">25</td>
+                        <td class="text-1">25</td>
+                        <td class="text-1">40</td>
+                        <td class="text-1">50</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1"><span style="color: #00ffff;">Arma Extra</span> por Round</td>
+                        <td class="text-1">XM1014</td>
+                        <td class="text-1">XM1014</td>
+                        <td class="text-1">XM1014</td>
+                        <td class="text-1">AWP</td>
+                        <td class="text-1">AWP</td>
+                        <td class="text-1">TECO G3SG1</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1"><span style="color: #00ffff;">Say @</span></td>
+                        <td class="text-2">Não</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-1">Sim</td>
+                        <td class="text-1">Sim</td>
+                        <td class="text-1">Sim</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">Slots de Skill Ativa <span style="color: #ff0000;">(Zombie)</span></td>
+                        <td class="text-1">2</td>
+                        <td class="text-1">2</td>
+                        <td class="text-1">2</td>
+                        <td class="text-1">3</td>
+                        <td class="text-1">3</td>
+                        <td class="text-1">3</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1">Slots de Skill Ativa <span style="color: #001aff;">(Humano)</span></td>
+                        <td class="text-1">3</td>
+                        <td class="text-1">3</td>
+                        <td class="text-1">3</td>
+                        <td class="text-1">4</td>
+                        <td class="text-1">4</td>
+                        <td class="text-1">4</td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="text-1"><span style="color: #fffb00;">Grupo da Staff</span></td>
+                        <td class="text-2">Não</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-1">Sim</td>
+                        <td class="text-1">Sim</td>
+                    </tr>
+                    <!-- <tr class="text-center">
+                        <td class="text-1">Acesso ao server de Desenvolvimento</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-1">Sim</td>
+                    </tr> -->
+                    <!-- <tr class="text-center">
+                        <td class="text-1">Vip 1 Mês para Amigo</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-2">Não</td>
+                        <td class="text-1">Ouro</td>
+                        <td class="text-1">Platina</td>
+                        <td class="text-1">Rubi</td>
+                        <td class="text-1">Esmeralda</td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div class="text-center mt-4">
+                <a href="buy_vips.html" class="btn btn-danger custom-btn">Tenho Interesse</a>
+            </div>
+        </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <div class="container">
-        <table class="table text-center">
-            <tbody>
-                <tr class="table-text">
-                    <th><img src="https://i.imgur.com/571Ww0W.png" alt="BENEFICIOS" width="150" height="150"></th>
-                    <th><img src="https://i.imgur.com/zbLZbHS.png" alt="ESMERALDA" width="150" height="150"></th>
-                    <th><img src="https://i.imgur.com/UkYnd6y.png" alt="DIAMANTE" width="150" height="150"></th>
-                    <th><img src="https://i.imgur.com/RbdVHsJ.png" alt="SUPREMO" width="150" height="150"></th>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Nomenclatura:</td>
-                    <td class="text-1">Esmeralda</td>
-                    <td class="text-1">Diamante</td>
-                    <td class="text-1">Supremo</td>
-                </tr>
-                <!-- <tr class="table-text">
-                    <td class="text-esp">Contribuição Mensal:</td>
-                    <td class="text-1">R$ 180,00</td>
-                    <td class="text-1">R$ 250,00</td>
-                    <td class="text-1">R$ 450,00</td>
-                </tr> -->
-                <tr class="table-text">
-                    <td class="text-esp">AmmoPacks:</td>
-                    <td class="text-1">900</td>
-                    <td class="text-1">1250</td>
-                    <td class="text-1">2250</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Night Fall Cash:</td>
-                    <td class="text-1">90</td>
-                    <td class="text-1">125</td>
-                    <td class="text-1">225</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Multiplicador de Dano:</td>
-                    <td class="text-1">110%</td>
-                    <td class="text-1">110%</td>
-                    <td class="text-1">130%</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Dano p/ Pack Extra:</td>
-                    <td class="text-1">700</td>
-                    <td class="text-1">700</td>
-                    <td class="text-1">500</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Dano p/ XP Extra:</td>
-                    <td class="text-1">700</td>
-                    <td class="text-1">700</td>
-                    <td class="text-1">500</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Chat Verde:</td>
-                    <td class="text-1">Sim</td>
-                    <td class="text-1">Sim</td>
-                    <td class="text-1">Sim</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Tag Exclusiva no Chat:</td>
-                    <td class="text-1">Sim</td>
-                    <td class="text-1">Sim</td>
-                    <td class="text-1">Sim</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Colete por Round:</td>
-                    <td class="text-1">25</td>
-                    <td class="text-1">40</td>
-                    <td class="text-1">50</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Arma Extra por Round:</td>
-                    <td class="text-1">AWP</td>
-                    <td class="text-1">AWP</td>
-                    <td class="text-1">TECO G3SG1</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Say @:</td>
-                    <td class="text-1">Sim</td>
-                    <td class="text-1">Sim</td>
-                    <td class="text-1">Sim</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Slots de Skill Passiva (Zombie):</td>
-                    <td class="text-1">3</td>
-                    <td class="text-1">3</td>
-                    <td class="text-1">3</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Slots de Skill Passiva (Humano):</td>
-                    <td class="text-1">4</td>
-                    <td class="text-1">4</td>
-                    <td class="text-1">4</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Grupo da Staff:</td>
-                    <td class="text-1">Não</td>
-                    <td class="text-1">Sim</td>
-                    <td class="text-1">Sim</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Acesso ao server de Desenvolvimento:</td>
-                    <td class="text-1">Não</td>
-                    <td class="text-1">Não</td>
-                    <td class="text-1">Sim</td>
-                </tr>
-                <tr class="table-text">
-                    <td class="text-esp">Vip 1 Mês para Amigo:</td>
-                    <td class="text-1">Platina</td>
-                    <td class="text-1">Rubi</td>
-                    <td class="text-1">Esmeralda</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <br>
-    <footer style="border-top: 1px solid #fff; padding: 14px;">
-        <p class="text-navegue">Night Fall Gaming © All rights reserved</p>
-    </footer>
 </body>
 </html>
